@@ -1,11 +1,13 @@
+import Link from 'next/link'
+
 export default function Navbar() {
-    const data = Array(10).fill('test');
+    const pages = ['', 'posts', 'about'];
 
     return (
         <nav className="flex flex-col items-center justify-between bg-teal-500">
-            {data.map((data, index) => (
+            {pages.map((page, index) => (
                 <div key={index} className="hover:bg-teal-700 p-6">
-                    <p>{data}</p>
+                    <Link href={'/' + page}>{page}</Link>
                 </div>
             ))}
         </nav>
