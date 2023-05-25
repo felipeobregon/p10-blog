@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 async function getData() {
   const res = await fetch('http://localhost:5000', { cache: 'no-cache' });
   // The return value is *not* serialized
@@ -20,7 +22,7 @@ export default async function Post() {
       {data.map((post: string, i: number) => {
         return (
           <li key={i}>
-            <h2>{post}</h2>
+            <Link href={`/post/${post}`}>{post}</Link>
           </li>
         )
       })
