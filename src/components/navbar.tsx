@@ -5,7 +5,7 @@ export default function Navbar() {
         <nav className="flex flex-col items-center justify-between bg-teal-500 p-6">
             {data.map(data => {
                 return (
-                    <p>{data}</p>
+                    <p className="hover:bg-teal-700">{data}</p>
                 )
             })}
         </nav>
