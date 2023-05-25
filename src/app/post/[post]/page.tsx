@@ -19,6 +19,6 @@ export default async function Post(props: Props) {
     const data = await getPost(props.params.post);
     
     return (
-        <p>{data}</p>
+        <p className="lg:w-1/3 md:w-1/2">{data}</p>
     )
 }
