@@ -8,12 +8,13 @@ export default function Navbar() {
     ];
 
     return (
-        <nav className="flex flex-col items-center justify-between bg-teal-500">
+        <nav className="flex flex-col bg-teal-500">
             {pages.map((page, index) => (
-                <div key={index} className="hover:bg-teal-700 p-6">
+                <div key={index} className="hover:bg-teal-700 px-5">
                     <Link href={page.url}>{page.name}</Link>
                 </div>
             ))}
         </nav>
     );
 }
+
