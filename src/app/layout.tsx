@@ -20,7 +20,14 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="flex h-screen">
           <Navbar />
-          {children}
+          <div className="flex-col">
+            <header className="bg-gray-200 p-5">
+              Felipe Obregon
+            </header>
+            <main className="flex-grow p-5">
+              {children}
+            </main>
+          </div>
         </div>
 
       </body>
