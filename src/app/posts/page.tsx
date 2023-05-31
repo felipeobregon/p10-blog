@@ -13,8 +13,16 @@ async function getData() {
 }
 
 export default async function Post() {
-  const data = await getData();
+  let data:string[] = []
+  try {
+    data = await getData();
+
+  } catch {
+    
+  }
   
+
+
   return (
     <ul>
       {data.map((post: string, i: number) => {
