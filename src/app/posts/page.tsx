@@ -13,26 +13,28 @@ async function getData() {
 }
 
 export default async function Post() {
-  let data:string[] = []
+  let data: string[] = []
   try {
     data = await getData();
 
   } catch {
-    
-  }
-  
 
+  }
 
   return (
-    <ul>
-      {data.map((post: string, i: number) => {
-        return (
-          <li key={i}>
-            <Link href={`/post/${post}`}>{post}</Link>
-          </li>
-        )
-      })
-      }
-    </ul>
+    <>
+      {data.length === 0 && <div>Failed to connect to server</div>}
+      <ul>
+        {data.map((post: string, i: number) => {
+          return (
+            <li key={i}>
+              <Link href={`/post/${post}`}>{post}</Link>
+            </li>
+          )
+        })
+        }
+      </ul>
+    </>
+
   )
 }
