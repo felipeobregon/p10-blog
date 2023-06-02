@@ -18,16 +18,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex h-screen">
+
+        <div className="flex flex-col w-1/3 mx-auto h-screen">
+          <header className="bg-gray-200 p-5">
+            Felipe Obregon
+          </header>
           <Navbar />
-          <div className="flex-col w-1/3">
-            <header className="bg-gray-200 p-5">
-              Felipe Obregon
-            </header>
-            <main className="flex-grow p-5">
-              {children}
-            </main>
-          </div>
+
+          <main className="flex-grow p-5">
+            {children}
+          </main>
         </div>
 
       </body>
