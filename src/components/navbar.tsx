@@ -10,7 +10,7 @@ export default function Navbar() {
     return (
         <nav className="flex bg-teal-500">
             {pages.map((page, index) => (
-                <Link key={index} className="hover:bg-teal-700" href={page.url}>{page.name}</Link>
+                <Link key={index} className="hover:bg-teal-700 px-5" href={page.url}>{page.name}</Link>
             ))}
         </nav>
     );
