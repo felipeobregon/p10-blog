@@ -8,10 +8,10 @@ export default function Navbar() {
     ];
 
     return (
-        <nav className="flex bg-teal-500">
+        <nav className="flex py-0 bg-teal-500">
             {pages.map((page, index) => (
-                <div key={index} className="hover:bg-teal-700 px-5">
-                    <Link href={page.url}>{page.name}</Link>
+                <div key={index} >
+                    <Link className="hover:bg-teal-700 px-5" href={page.url}>{page.name}</Link>
                 </div>
             ))}
         </nav>
