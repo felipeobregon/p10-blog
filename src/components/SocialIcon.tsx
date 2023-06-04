@@ -9,7 +9,7 @@ export default function SocialIcon() {
 
     return (
         <a href={link}>
-            <SocialImage width={size} height={size} className="fill-blue-500"/>
+            <SocialImage width={size} height={size} className="fill-gray-500 hover:fill-blue-500"/>
         </a>
     )
 }
