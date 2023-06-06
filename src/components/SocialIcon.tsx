@@ -2,7 +2,17 @@ import TwitterIcon from './twitter.svg'
 import LinkedIn from './linkedin.svg'
 import GitHub from './github.svg'
 
-export default function SocialIcon() {
+type Props = {
+    type: string
+}
+
+const socials = {
+    "Twitter": TwitterIcon,
+    "LinkedIn": LinkedIn,
+    "GitHub": GitHub
+}
+
+export default function SocialIcon({ type } : Props) {
 
     const SocialImage = TwitterIcon
     const link = "https://twitter.com"
