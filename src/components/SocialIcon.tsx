@@ -1,4 +1,6 @@
 import TwitterIcon from './twitter.svg'
+import LinkedIn from './linkedin.svg'
+import GitHub from './github.svg'
 
 export default function SocialIcon() {
 
