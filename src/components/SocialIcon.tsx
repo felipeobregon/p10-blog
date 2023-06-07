@@ -14,7 +14,7 @@ const socials = {
 
 export default function SocialIcon({ type } : Props) {
 
-    const SocialImage = TwitterIcon
+    const SocialImage = socials[type as keyof typeof socials]
     const link = "https://twitter.com"
 
     const size = 30
