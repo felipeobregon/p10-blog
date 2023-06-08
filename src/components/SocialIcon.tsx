@@ -4,6 +4,7 @@ import GitHub from './github.svg'
 
 type Props = {
     type: string
+    link: string
 }
 
 const socials = {
@@ -12,10 +13,9 @@ const socials = {
     "GitHub": GitHub
 }
 
-export default function SocialIcon({ type } : Props) {
+export default function SocialIcon({ type, link } : Props) {
 
     const SocialImage = socials[type as keyof typeof socials]
-    const link = "https://twitter.com"
 
     const size = 30
 
