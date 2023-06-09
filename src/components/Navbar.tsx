@@ -2,9 +2,9 @@ import Link from 'next/link'
 
 export default function Navbar() {
     const pages = [
-        { name: 'home', url: '/' },
-        { name: 'posts', url: '/posts' },
-        { name: 'about', url: '/about' }
+        { name: 'Blog', url: '/posts' },
+        { name: 'Projects', url: '/posts' },
+        { name: 'About', url: '/about' }
     ];
 
     return (
