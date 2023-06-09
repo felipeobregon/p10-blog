@@ -20,10 +20,11 @@ export default function RootLayout({
       <body className={inter.className}>
 
         <div className="flex flex-col w-1/2 mx-auto h-screen">
-          <header className="bg-gray-200 p-5">
-            Felipe Obregon
+          <header className="flex justify-end bg-gray-200 p-5">
+            <div className="mr-auto">My Website</div>
+            <Navbar />
           </header>
-          <Navbar />
+
 
           <main className="flex-grow p-5">
             {children}
