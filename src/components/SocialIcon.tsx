@@ -3,9 +3,9 @@ import LinkedIn from './linkedin.svg'
 import GitHub from './github.svg'
 
 type Props = {
-    type: string
-    link: string
-    size: number
+    type: string;
+    link: string;
+    size: number;
 }
 
 const socials = {
