@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
 
-        <div className="flex flex-col w-1/2 mx-auto h-screen">
+        <div className="flex flex-col w-3/4 mx-auto h-screen">
           <header className="flex rounded-xl justify-end bg-gray-200 p-5">
             <div className="font-bold text-2xl mr-auto">Felipe Obregon</div>
             <Navbar />
